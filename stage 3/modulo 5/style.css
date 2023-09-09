@@ -1,0 +1,101 @@
+* {
+    --dark-blue: #065E7C;
+    --medium-blue: #387E96;
+    --title-black: #202024;
+    --body-black: #121214;
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 700px;
+    line-height: 160%;
+    margin-top: 3rem;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 160%;
+}
+
+.cat{
+    width: 15rem;
+    height: 8.5rem;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#man {
+    border-radius: 50%;
+}
+
+main, #cover {
+    width: 100vw;
+}    
+#cover {
+    height: 50vw;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+footer {
+    background-color: var(--medium-blue);
+    height: 6.4rem;
+    color: white;
+    text-align: center;
+}
+
+footer > p {
+    padding: 1.6rem ;
+}
+
+header {
+    background-color: var(--dark-blue);
+    height: 7.2rem;
+    display: flex;
+    gap: 2.5rem;
+    padding: 1.2rem 2.8rem;
+    align-items: center;
+}
+
+header > img {
+    width: 4rem;
+    height: 4rem;
+}
+
+/* hidding label but keeping it acessible*/
+label {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+}
+
+input {
+    padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+    border-radius: .4rem;
+    background: rgba(255, 255, 255, 0.20);
+    border: none;
+}
+
+input::placeholder{
+    color: white;
+}
+
+@media (min-width: 800px) {
+    #cover {
+        width: 80rem;
+        height: 40rem;
+        border-radius: 5px;
+    }
+}
