@@ -10,19 +10,66 @@
 }
 
 :root{
-    font-size: 62.5%
+    font-size: 62.5%;
+    text-justify: justify;
+    line-height: 200%;
+}
+
+main > p,
+h1,
+section {
+    margin: 3.2rem 2.2rem 0;
 }
 
 h1 {
     font-size: 2.4rem;
     font-weight: 700px;
-    line-height: 160%;
-    margin-top: 3rem;
 }
 
-p {
+/* main */
+
+main {
+    width: 100vw;
+}
+
+main > p {
     font-size: 1.6rem;
-    line-height: 160%;
+}
+
+main > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.2rem
+}
+
+main > div > div {
+    display: flex;
+    gap: 12px;
+    margin-left: 22px; 
+}
+
+#cover {
+    width: 100vw;
+    height: 50vw;
+}
+
+/* aside */
+
+section {
+    display: grid;
+    grid-template-columns: 15rem calc(100vw - 15rem - 4.4rem - 1.6rem);
+    gap: 1.6rem
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 700px;
+}
+
+section > span > p {
+    font-size: 1.4rem;
 }
 
 .cat{
@@ -32,32 +79,22 @@ p {
     border-radius: 5px;
 }
 
-#man {
-    border-radius: 50%;
-}
-
-main, #cover {
-    width: 100vw;
-}    
-#cover {
-    height: 50vw;
-}
-
-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
+/* footer */
 footer {
     background-color: var(--medium-blue);
     height: 6.4rem;
     color: white;
     text-align: center;
+    margin-top: 4rem
 }
 
 footer > p {
     padding: 1.6rem ;
+    font-size: 1.6rem;
+    line-height: 200%;
 }
+
+/* header */
 
 header {
     background-color: var(--dark-blue);
@@ -73,6 +110,10 @@ header > img {
     height: 4rem;
 }
 
+#man {
+    border-radius: 50%;
+}
+
 /* hidding label but keeping it acessible*/
 label {
     width: 0;
@@ -86,11 +127,32 @@ input {
     border-radius: .4rem;
     background: rgba(255, 255, 255, 0.20);
     border: none;
+    flex-grow: 1;
 }
 
 input::placeholder{
     color: white;
 }
+
+/* like and dislike buttons */
+
+button {
+    border: none;
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+    padding: 1.2rem;
+}
+
+button > img {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+button:nth-child(2){
+    transform: rotate(180deg);
+}
+
+/* desktop */
 
 @media (min-width: 800px) {
     #cover {
