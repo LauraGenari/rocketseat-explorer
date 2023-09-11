@@ -1,29 +1,30 @@
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root{
+    font-family: 'Mulish', sans-serif;
+    font-size: 62.5%;
     --dark-blue: #065E7C;
     --medium-blue: #387E96;
     --title-black: #202024;
     --body-black: #121214;
-    font-family: 'Mulish', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root{
-    font-size: 62.5%;
-    text-justify: justify;
-    line-height: 200%;
 }
 
 main > p,
-h1,
-section {
+aside,
+.title-group {
     margin: 3.2rem 2.2rem 0;
 }
 
 h1 {
     font-size: 2.4rem;
     font-weight: 700px;
+    line-height: 3.84rem;
 }
 
 /* main */
@@ -34,9 +35,10 @@ main {
 
 main > p {
     font-size: 1.6rem;
+    line-height: 2.56rem;
 }
 
-main > div {
+.title-group {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -44,10 +46,9 @@ main > div {
     gap: 1.2rem
 }
 
-main > div > div {
+.button-group {
     display: flex;
     gap: 12px;
-    margin-left: 22px; 
 }
 
 #cover {
@@ -55,26 +56,42 @@ main > div > div {
     height: 50vw;
 }
 
+/* like and dislike buttons */
+
+button {
+    border: none;
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+}
+
+button:nth-child(2){
+    transform: rotate(180deg);
+}
+
 /* aside */
 
 section {
     display: grid;
     grid-template-columns: 15rem calc(100vw - 15rem - 4.4rem - 1.6rem);
-    gap: 1.6rem
+    gap: 1.6rem;
+    margin-top: 3.2rem;
+    align-items:center;
 }
 
 h2 {
     font-size: 1.8rem;
     font-weight: 700px;
+    line-height: 2.88rem;
 }
 
 section > span > p {
     font-size: 1.4rem;
+    line-height: 2.24rem;
 }
 
 .cat{
-    width: 15rem;
-    height: 8.5rem;
+    width: 15.1rem;
+    height: 8.4rem;
     object-fit: cover;
     border-radius: 5px;
 }
@@ -91,7 +108,8 @@ footer {
 footer > p {
     padding: 1.6rem ;
     font-size: 1.6rem;
-    line-height: 200%;
+    font-weight: 600;
+    line-height: 3.2rem;
 }
 
 /* header */
@@ -132,24 +150,6 @@ input {
 
 input::placeholder{
     color: white;
-}
-
-/* like and dislike buttons */
-
-button {
-    border: none;
-    border-radius: 50%;
-    background-color: var(--dark-blue);
-    padding: 1.2rem;
-}
-
-button > img {
-    width: 1.6rem;
-    height: 1.6rem;
-}
-
-button:nth-child(2){
-    transform: rotate(180deg);
 }
 
 /* desktop */
