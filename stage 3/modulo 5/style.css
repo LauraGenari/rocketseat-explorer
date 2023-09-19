@@ -17,16 +17,15 @@ body {
     --body-black: #121214;
 }
 
-div > p,
 aside,
 .title-group {
-    margin: 3.2rem 2.2rem 0;
+    margin: 0 2.2rem 
 }
 
 h1 {
     font-size: 2.4rem;
     font-weight: 700;
-    line-height: 3.84rem;
+    line-height: 1;
 }
 
 /* main */
@@ -34,6 +33,7 @@ h1 {
 div > p {
     font-size: 1.6rem;
     line-height: 2.56rem;
+    margin: 3.2rem 2.2rem 0;
 }
 
 .title-group {
@@ -41,7 +41,7 @@ div > p {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 1.2rem
+    margin-top: 2rem
 }
 
 .button-group {
@@ -72,8 +72,7 @@ button:nth-child(2){
 section {
     display: grid;
     grid-template-columns: 15rem 1fr;
-    gap: 1.6rem;
-    margin-bottom: 3.2rem;
+    gap: 1.6rem; 
     align-items:center;
 }
 
@@ -116,7 +115,7 @@ header {
     height: 7.2rem;
     display: flex;
     gap: 2.5rem;
-    padding: 1.2rem 2.8rem;
+    padding: 0 2.8rem;
     align-items: center;
 }
 
@@ -184,9 +183,14 @@ input::placeholder{
         grid-area: header;
         padding: 0 9rem
     }
+    
+    .title-group,
+    div > p {
+        margin: 2.2rem 0
+    }
 
     h1 {
-        line-height: 0;
+        margin-top: 0
     }
 
 }
