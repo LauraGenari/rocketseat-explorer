@@ -6,7 +6,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
     max-width: 100vw;
     display: grid;
-    gap: 3.4rem;
 }
 
 :root{
@@ -74,7 +73,7 @@ section {
     display: grid;
     grid-template-columns: 15rem 1fr;
     gap: 1.6rem;
-    margin-top: 3.2rem;
+    margin-bottom: 3.2rem;
     align-items:center;
 }
 
@@ -121,7 +120,7 @@ header {
     align-items: center;
 }
 
-header > img {
+header > img, button > img {
     width: 4rem;
     height: 4rem;
 }
@@ -163,6 +162,7 @@ input::placeholder{
         "header header"
         "main aside"
         "footer footer";
+        gap: 3.4rem;
     }
     
     main {
@@ -184,4 +184,9 @@ input::placeholder{
         grid-area: header;
         padding: 0 9rem
     }
+
+    h1 {
+        line-height: 0;
+    }
+
 }
