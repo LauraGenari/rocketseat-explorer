@@ -95,6 +95,11 @@ section > span > p {
     border-radius: 5px;
 }
 
+.cat:hover {
+    transform: scale(1.15);
+    transition: all 200ms ease-out;
+}
+
 /* footer */
 footer {
     background-color: var(--medium-blue);
