@@ -35,7 +35,7 @@ body, button, input {
 }
 
 button {
-    background-color: #7879F1;
+    background-color: #FF9500;
     color: white;
     font-weight: bold;
     border-radius: 0 .4rem .4rem 0;
@@ -45,7 +45,7 @@ button {
 }
 
 button:hover {
-    background-color: #6363ce;
+    background-color: #b36800;
 }
 
 .hide {
@@ -76,28 +76,6 @@ h1, p {
     color: #34355B;
 }
 
-p {
-    opacity: .8;
-}
-
-form {
-    margin-top: 4.8rem;
-    display: flex;
-    justify-content: center;
-}
-
-input, button {
-    border: none;
-    padding: 1.6rem;
-}
-
-input {
-    background-color: #DCE2E9;
-    width: 6rem;
-    border-radius: .4rem 0 0 .4rem;
-}
-
-
 
 /*screen2*/
 h2 {
@@ -109,4 +87,12 @@ h2 {
 
 .screen2 button {
     border-radius: .4rem;
+}
+
+#message {
+    background-color: #E4EDF1;
+}
+
+.hide {
+    display: none;
 }
